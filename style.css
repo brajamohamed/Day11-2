@@ -1,0 +1,56 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #435b66;
+  height: 10vh;
+}
+.title {
+  align-self: center;
+  color: white;
+}
+img {
+  align-self: center;
+}
+.content {
+  display: grid;
+  overflow: auto;
+  background-color: #f5f5f5;
+  height: 90vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "side search search search"
+    "side sm1 sm2 sm3"
+    "side lg lg lg";
+}
+.box {
+  background-color: black;
+  color: gray;
+  border-radius: 10px;
+  margin: 40px;
+}
+.sidebar {
+  grid-area: side;
+  height: 75%;
+  min-width: 150px;
+  align-self: center;
+}
+.searchbar {
+  grid-area: search;
+  height: 15%;
+  width: 80%;
+  place-self: center;
+}
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.sm-box {
+  height: 50%;
+  min-width: 150px;
+}
+.lg-box {
+  grid-area: lg;
+  height: 45%;
+}
